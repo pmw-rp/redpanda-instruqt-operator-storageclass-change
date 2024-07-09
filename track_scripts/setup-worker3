@@ -25,7 +25,7 @@ chmod +x redpanda-tune-k8s-node.sh
 
 # install k3s
 TOKEN=$(ssh -o StrictHostKeyChecking=no server cat /var/lib/rancher/k3s/server/node-token)
-VERSION=v1.28.6+k3s2
+VERSION=v1.29.0+k3s1
 curl -sfL https://get.k3s.io | K3S_URL=https://server:6443 K3S_TOKEN=$TOKEN INSTALL_K3S_VERSION=$VERSION sh -
 
 echo "$HOSTNAME connected to server"

@@ -13,7 +13,7 @@ notes:
 
     You will walk through the configuration for Kubernetes, the Operator, Redpanda, networking, and the various tools to interact with this environment.
 
-    Please wait while the VMs are deployed and the Redpanda cluster is started and configured (this takes ~5 minutes without hot start environments).
+    Please wait while the VMs are deployed and the Redpanda cluster is started and configured. This will take about 9 minutes so grab yourself a coffee and let's go!
 
     ![skate.png](../assets/skate.png)
 tabs:
@@ -37,6 +37,7 @@ tabs:
 difficulty: ""
 timelimit: 600
 ---
+# Introduction
 There are two ways to deploy Redpanda in Kubernetes: the operator and the helm chart. This track focused on operator-based deployments. One thing to keep in mind is that the operator actually uses the helm chart under the covers to perform some basic management tasks for Redpanda (so the two deployment methods are more similar than you may think). For detailed information about running Redpanda in Kubernetes, see the [Redpanda documentation](https://docs.redpanda.com/docs/deploy/deployment-option/self-hosted/kubernetes).
 
 This assignment (or challenge if you are familiar with Instruqt) is here to explain how this environment was configured and deployed. There are no required commands; instead you will be given commands to run that will verify the cluster and peripheral environment is in working order.
