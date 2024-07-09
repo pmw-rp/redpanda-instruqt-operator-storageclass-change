@@ -1,21 +1,31 @@
 slug: changing-storageclass-with-redpanda-operator
+id: jhv6o2pydhvh
 title: Changing StorageClass with Redpanda Operator
-teaser: A short description of the track.
+teaser: Learn how to change the K8s storage class used by Redpanda.
 description: |-
-  A long description of the track.
+  Redpanda is a Kafka-compatible streaming data platform that is less complex and less costly than any other commercial mission-critical event streaming platform. It's fast, it's easy, and it keeps your data safe.
 
-  You can use any GitHub flavoured markdown.
-icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
-tags: []
+  The Redpanda Operator extends Kubernetes with custom resource definitions (CRDs), allowing you to define Redpanda clusters as native Kubernetes resources. The resource that the Redpanda Operator uses to represent a Redpanda cluster is the Redpanda resource.
+
+  In this tutorial, you learn how to switch the storage class that Redpanda will use when creating Persistent Volume Claims when deployed using the Redpanda Operator.
+icon: https://res.cloudinary.com/practicaldev/image/fetch/s--W2NpA-Jj--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5327/ea54f4c7-abf0-46fc-a971-766b484ab9bd.png
+tags:
+- storageclass
+- day2ops
+- operator
+- k8s
 owner: redpanda
 developers:
 - pmw@redpanda.com
+show_timer: true
+idle_timeout: 300
+timelimit: 8400
 lab_config:
   overlay: false
   width: 33
   position: right
-  sidebar_enabled: true
+  extend_ttl: 300
   feedback_recap_enabled: true
-  feedback_tab_enabled: false
   loadingMessages: true
   hideStopButton: false
+checksum: "1579447561436732095"
